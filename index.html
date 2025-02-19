@@ -11,28 +11,32 @@
   <script src="sonad%20all.js"></script>
     <styles src="kujundus.css"></styles>
     <link rel="stylesheet" href="kujundus.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
    <!-- <h1 id="header">Alias</h1> -->
     
-<div class="jumbotron text-center" id="background" style="margin-top: 50px;">
+<div class="jumbotron text-center" id="background" style="margin-top: 50px; margin-bottom: -30px; padding: 50px;">
 
     <h2 id="word"></h2>
       <h1 id="myH1"></h1>
-      
+      <br> <br><br> <br><br> <br>
   <button type="button" id="yes" class="btn btn-primary" onclick="tehtud()">Arvati ära!</button>
-<br> <br><br>
+
+<button type="button" id="otsiBtn" class="btn btn-primary" onclick="otsi()">Otsi tähendust</button>
+<br> <br>
     <div id="container timer">
-<div id="display">01:30</div>
+      <input id="display" type="text" value="01:30" />
         
         <div id="controls">
-            <button id="startBtn" onclick="start()">Start</button>
-            <button id="stopBtn" onclick="stop()">Paus</button>
-            <button id="resetBtn" onclick="reset()">Uuesti</button>
+            <button id="startBtn" onclick="start()"></button>
+            <button id="stopBtn" onclick="stop()"></button>
+            <button id="resetBtn" onclick="reset()"></button>
         </div>
     </div>
-    
 </div>
   
 <div class="container target">
@@ -56,6 +60,8 @@
     </div>
   </div>
 </div>
+    <br><br><br>
+    <br><br><br>
     <br><br><br>
     <!-- <div class="container">
   <div class="row">

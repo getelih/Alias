@@ -3,10 +3,13 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: hsl(0, 0%, 90%);
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 #myH1{
     font-size: 4rem;
-    font-family: "Arial", sans-serif;
     color: hsl(0, 0%, 25%);
 }
 #container{
@@ -18,14 +21,21 @@ body{
     border-radius: 50px;
     background-color: white;
 }
-#display{
+#display {
     font-size: 5rem;
-    font-family: monospace;
     font-weight: bold;
     color: hsl(0, 0%, 30%);
     text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    background-color: transparent; /* Läbipaistev taust */
+    border: none; /* Eemaldame piiri */
+    outline: none; /* Eemaldame fookuse äärise */
+    text-align: center; /* Keskele joondamine */
+    width: 160px; /* Nupu laius */
+    display: inline-block; /* Inline blokk, et oleks sarnane originaalsele kujule */
+    cursor: text; /* Muudame kursorit, et oleks sarnane tekstiväljale */
 }
+
 #controls button{
     font-size: 1.5rem;
     font-weight: bold;
@@ -38,23 +48,84 @@ body{
     color: white;
     transition: background-color 0.5s ease;
 }
-#startBtn{
-    background-color: hsl(115, 100%, 40%);
+#startBtn { 
+    background-image: url('play.png'); /* Määrame taustapildi */
+    background-position: center center; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame tausta */
+    width: 5px; /* Nupu laius */
+    height: 70px; /* Nupu kõrgus */
+    background-size: 60%; /* Pilt on 80% oma algsuurusest */
 }
-#startBtn:hover{
-    background-color: hsl(115, 100%, 30%);
+
+
+#startBtn:hover {
+    background-image: url('play.png'); /* Määrame taustapildi */
+    background-position: center center; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: rgba(255, 255, 255, 0.304); /* Kerge varjund hoveri ajal */
+    width: 5px; /* Nupu laius */
+    height: 70px; /* Nupu kõrgus */
+    background-size: 60%; /* Pilt on 80% oma algsuurusest */
 }
+
 #stopBtn{
-    background-color: hsl(10, 90%, 50%);
+    background-image: url('stop.png'); /* Määrame taustapildi */
+    
+    background-position: center center; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame tausta */
+    width: 5px; /* Nupu laius */
+    height: 70px; /* Nupu kõrgus */
+    background-size: 60%; /* Pilt on 80% oma algsuurusest */
 }
 #stopBtn:hover{
-    background-color: hsl(10, 90%, 40%);
+    background-image: url('stop.png'); /* Määrame taustapildi */
+    background-position: center center; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: rgba(255, 255, 255, 0.304); /* Kerge varjund hoveri ajal */
+    width: 5px; /* Nupu laius */
+    height: 70px; /* Nupu kõrgus *//
+    background-size: 60%; /* Pilt on 80% oma algsuurusest */
 }
-#resetBtn{
-    background-color: hsl(205, 90%, 60%);
+#resetBtn{  
+    background-image: url('rewind.png'); /* Määrame taustapildi */
+    background-position: center center; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame tausta */
+    width: 5px; /* Nupu laius */
+    height: 70px; /* Nupu kõrgus */
+    background-size: 60%; /* Pilt on 80% oma algsuurusest */
 }
 #resetBtn:hover{
-    background-color: hsl(205, 90%, 50%);
+    background-image: url('rewind.png'); /* Määrame taustapildi */
+    background-position: center center; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: rgba(255, 255, 255, 0.304); /* Kerge varjund hoveri ajal */
+    width: 5px; /* Nupu laius */
+    height: 70px; /* Nupu kõrgus */
+    background-size: 60%; /* Pilt on 80% oma algsuurusest */
+}
+
+#otsiBtn{
+    background-color: hsl(0, 0%, 69%);
+    color: black;
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+#otsiBtn:hover{
+    background-color: hsl(0, 0%, 82%);
+    color: black;
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 h1#header {
@@ -68,49 +139,71 @@ div#timer {
 
 #word {
     font-size: 50px;
-    font-family: "Arial", sans-serif;
     color: hsl(0, 0%, 25%);
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 #kergeBtn {
     font-size: 28px;
-    background-color: palegoldenrod;
+    background-color: #eee8aa;
     color: hsl(0, 0%, 25%);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 82px;
     padding-right: 82px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #keskmineBtn {
     font-size: 28px;
-    background-color: skyblue;
+    background-color: #87ceeb;
     color: hsl(0, 0%, 25%);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 60px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #raskeBtn {
     font-size: 28px;
-    background-color: pink;
+    background-color: #ffc0cb;
     color: hsl(0, 0%, 25%);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 80px;
     padding-right: 80px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 60px;
 }
 
 #yes {
-    font-size: 28px;
-    background-color: lightgreen;
-    color: hsl(0, 0%, 25%);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
+    font-size: 22px;
+    background-color: rgb(71, 107, 150);
+    color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    image: url('next.png');
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+#yes:hover {
+    font-size: 22px;
+    background-color: rgb(94, 138, 193);
+    color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    image: url('next.png');
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 #header {
@@ -123,14 +216,24 @@ div#timer {
 
 }
 
-body {
-  background-image: url('bgimg.jpg'); /* Määrame taustapildi */
-  background-size: cover; /* Pilt katab kogu ala */
-  background-position: center top; /* Pilt keskendub */
-  background-repeat: no-repeat; /* Pilt ei korda ennast */
-  height: 100vh; /* Div hõlmab kogu nähtava akna kõrguse */
-  width: 100%; /* Laius on 100% */
+.algus-bg {
+    background-image: url('whitebubble.png'); /* Määrame taustapildi */
+    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
+    background-position: center top; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame valge tausta */
+
 }
+
+body {
+    background-image: url('bible-sm1.jpg'); /* Määrame taustapildi */
+    background-size: auto 130%; /* Pilt säilitab oma kõrguse 100% ja kärbib külgedelt */
+    background-position: center top; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    height: 100vh; /* Div hõlmab kogu nähtava akna kõrguse */
+    width: 100%; /* Laius on 100% */
+  }
+  
 
 /* Muudame sisu loetavaks, lisades poolläbipaistva taustakihi */
 #background-section h1, #background-section h2, #container {
@@ -142,15 +245,27 @@ body {
 
 /* Taustavärvid kategooriate jaoks */
 .kerged-bg {
-    background-color: palegoldenrod; /* Kergete sõnade jaoks */
+    background-image: url('yellowbubble.png'); /* Määrame taustapildi */
+    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
+    background-position: center top; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame valge tausta */
 }
 
 .keskmised-bg {
-    background-color: skyblue; /* Keskmiste sõnade jaoks */
+    background-image: url('bubbleblue.png'); /* Määrame taustapildi */
+    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
+    background-position: center top; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame valge tausta */
 }
 
 .rasked-bg {
-    background-color: pink; /* Raskete sõnade jaoks */
+    background-image: url('pinkbubble.png'); /* Määrame taustapildi */
+    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
+    background-position: center top; /* Pilt keskendub */
+    background-repeat: no-repeat; /* Pilt ei korda ennast */
+    background-color: transparent; /* Eemaldame valge tausta */
 }
 
 
