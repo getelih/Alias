@@ -28,12 +28,12 @@ body{
     text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
     margin-bottom: 10px;
     background: none; /* Läbipaistev taust */
-    border: none; /* Eemaldame piiri */
-    outline: none; /* Eemaldame fookuse äärise */
+    border: none; 
+    outline: none; 
     text-align: center; /* Keskele joondamine */
     width: 160px; /* Nupu laius */
-    display: inline-block; /* Inline blokk, et oleks sarnane originaalsele kujule */
-    cursor: text; /* Muudame kursorit, et oleks sarnane tekstiväljale */
+    display: inline-block; 
+    cursor: text; 
 }
 
 #controls button{
@@ -50,61 +50,60 @@ body{
 }
 #startBtn { 
     background-image: url('play.png'); /* Määrame taustapildi */
-    background-position: center center; /* Pilt keskendub */
+    background-position: center center; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame tausta */
     width: 5px; /* Nupu laius */
     height: 60px; /* Nupu kõrgus */
-    background-size: 40%; /* Pilt on 80% oma algsuurusest */
+    background-size: 40%; /* Pilt on 40% oma algsuurusest */
 }
 
 
 #startBtn:hover {
     background-image: url('play.png'); /* Määrame taustapildi */
-    background-position: center center; /* Pilt keskendub */
+    background-position: center center; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: rgba(255, 255, 255, 0.304); /* Kerge varjund hoveri ajal */
     width: 5px; /* Nupu laius */
     height: 60px; /* Nupu kõrgus */
-    background-size: 40%; /* Pilt on 80% oma algsuurusest */
+    background-size: 40%; /* Pilt on 40% oma algsuurusest */
 }
 
 #stopBtn{
     background-image: url('stop.png'); /* Määrame taustapildi */
-    
-    background-position: center center; /* Pilt keskendub */
+    background-position: center center; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame tausta */
     width: 5px; /* Nupu laius */
     height: 60px; /* Nupu kõrgus */
-    background-size: 40%; /* Pilt on 80% oma algsuurusest */
+    background-size: 40%; /* Pilt on 40% oma algsuurusest */
 }
 #stopBtn:hover{
     background-image: url('stop.png'); /* Määrame taustapildi */
-    background-position: center center; /* Pilt keskendub */
+    background-position: center center; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: rgba(255, 255, 255, 0.304); /* Kerge varjund hoveri ajal */
     width: 5px; /* Nupu laius */
     height: 60px; /* Nupu kõrgus */
-    background-size: 40%; /* Pilt on 80% oma algsuurusest */
+    background-size: 40%; /* Pilt on 40% oma algsuurusest */
 }
 #resetBtn{  
     background-image: url('rewind.png'); /* Määrame taustapildi */
-    background-position: center center; /* Pilt keskendub */
+    background-position: center center; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame tausta */
     width: 5px; /* Nupu laius */
     height: 60px; /* Nupu kõrgus */
-    background-size: 40%; /* Pilt on 80% oma algsuurusest */
+    background-size: 40%; /* Pilt on 40% oma algsuurusest */
 }
 #resetBtn:hover{
     background-image: url('rewind.png'); /* Määrame taustapildi */
-    background-position: center center; /* Pilt keskendub */
+    background-position: center center; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: rgba(255, 255, 255, 0.304); /* Kerge varjund hoveri ajal */
     width: 5px; /* Nupu laius */
     height: 60px; /* Nupu kõrgus */
-    background-size: 40%; /* Pilt on 80% oma algsuurusest */
+    background-size: 40%; /* Pilt on 40% oma algsuurusest */
 }
 
 #otsiBtn{
@@ -222,8 +221,8 @@ div#timer {
 
 .algus-bg {
     background-image: url('whitebubble.png'); /* Määrame taustapildi */
-    background-size: 80% 35%; /* Pilt on 70% lai ja 100% kõrge */
-    background-position: center top; /* Pilt keskendub */
+    background-size: 80% 35%;
+    background-position: center top;
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame valge tausta */
     shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
@@ -232,8 +231,8 @@ div#timer {
 
 body {
     background-image: url('bible-sm1.jpg'); /* Määrame taustapildi */
-    background-size: auto 130%; /* Pilt säilitab oma kõrguse 100% ja kärbib külgedelt */
-    background-position: center top; /* Pilt keskendub */
+    background-size: auto 130%; 
+    background-position: center top; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     height: 100vh; /* Div hõlmab kogu nähtava akna kõrguse */
     width: 100%; /* Laius on 100% */
@@ -251,24 +250,24 @@ body {
 /* Taustavärvid kategooriate jaoks */
 .kerged-bg {
     background-image: url('yellowbubble.png'); /* Määrame taustapildi */
-    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
-    background-position: center top; /* Pilt keskendub */
+    background-size: 100% 45%; 
+    background-position: center top; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame valge tausta */
 }
 
 .keskmised-bg {
     background-image: url('bubbleblue.png'); /* Määrame taustapildi */
-    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
-    background-position: center top; /* Pilt keskendub */
+    background-size: 100% 45%; 
+    background-position: center top; 
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame valge tausta */
 }
 
 .rasked-bg {
     background-image: url('pinkbubble.png'); /* Määrame taustapildi */
-    background-size: 100% 45%; /* Pilt on 70% lai ja 100% kõrge */
-    background-position: center top; /* Pilt keskendub */
+    background-size: 100% 45%; 
+    background-position: center top;
     background-repeat: no-repeat; /* Pilt ei korda ennast */
     background-color: transparent; /* Eemaldame valge tausta */
 }
