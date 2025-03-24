@@ -25,17 +25,6 @@ window.onload = function() {
 var number;
 var selectedWordsList;
 var lastSelectedList; // See muutuja jälgib, millisest loendist viimane sõna valiti.
-var punktid1;
-  var punktid2;
-  var punktid3;
-  var punktid4;
-  var punktid5;
-  var punktid6;
-  var punktid7;
-  var punktid8;
-  var punktid9;
-  var punktid10;
-  var punktid11;
   
   document.getElementById("word").textContent = "Vali raskusaste!";
   const background = document.getElementById('background');
@@ -145,13 +134,13 @@ if (selectedWordsList && number !== undefined) {
     // Kontrollime, millisest loendist viimane sõna oli ja muudame taustavärvi
     if (lastSelectedList === 'kerged') {
       kerged(); // Käivitame uuesti funktsiooni kerged
-      background.classList.add('kerged-bg'); // Muudame taustavärvi roheliseks
+      background.classList.add('kerged-bg'); // Muudame taustavärvi kollaseks
     } else if (lastSelectedList === 'keskmised') {
       keskmised(); // Käivitame uuesti funktsiooni keskmised
       background.classList.add('keskmised-bg'); // Muudame taustavärvi siniseks
     } else if (lastSelectedList === 'rasked') {
       rasked(); // Käivitame uuesti funktsiooni rasked
-      background.classList.add('rasked-bg'); // Muudame taustavärvi punaseks
+      background.classList.add('rasked-bg'); // Muudame taustavärvi roosaks
     }
   } else {
     console.error("Element with ID 'background' not found.");
@@ -196,7 +185,7 @@ document.getElementById("resetBtn").onclick = reset;
 function start() {
     if (!isRunning && remainingTime > 0) {
         startTime = Date.now();
-        timer = setInterval(update, 10);  // Kontrollime iga 10ms järel, et uuendada kuva
+        timer = setInterval(update, 10);  // Kontrollime iga 10ms järel, et uuendada kella
         isRunning = true;
     }
 }
@@ -272,7 +261,7 @@ display.addEventListener("input", function() {
 });
 
 
-  // Sidume nupud sündmuste külge
+  // Nuppude sidumine
   document.getElementById("startBtn").onclick = start;
   document.getElementById("stopBtn").onclick = stop;
   document.getElementById("resetBtn").onclick = reset;
